@@ -1,4 +1,4 @@
-# Currency Converter CLI
+# Currency Converter
 
 ## About this project
 
