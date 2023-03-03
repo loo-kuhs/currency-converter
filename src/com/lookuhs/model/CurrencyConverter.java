@@ -6,7 +6,7 @@ import java.util.Map;
 public class CurrencyConverter {
   public Map<Currency, Double> exchangeRates;
   
-  public CurrencyConverter(){
+  public CurrencyConverter(Currency[] currencies){
     exchangeRates = new EnumMap<>(Currency.class);
   }
   

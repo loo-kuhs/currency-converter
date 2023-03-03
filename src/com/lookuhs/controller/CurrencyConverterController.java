@@ -1,6 +1,8 @@
 package com.lookuhs.controller;
 
+import com.lookuhs.model.Currency;
 import com.lookuhs.model.CurrencyConverter;
+import com.lookuhs.view.CurrencyConverterView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -13,9 +15,17 @@ import java.net.URL;
 public class CurrencyConverterController {
   
   private CurrencyConverter currencyConverter;
+  private CurrencyConverterView currencyConverterView;
   
-  public CurrencyConverterController() {
-    currencyConverter = new CurrencyConverter();
+  public CurrencyConverterController(CurrencyConverter currencyConverter,
+                                     CurrencyConverterView currencyConverterView) {
+    this.currencyConverter = currencyConverter;
+    this.currencyConverterView = currencyConverterView;
+  }
+  
+  public CurrencyConverterController(Currency[] currencies) {
+    this.currencyConverter = new CurrencyConverter(currencies);
+    this.currencyConverterView = new CurrencyConverterView(this);
   }
   
   public void updateExchangeRates() {
@@ -44,5 +54,19 @@ public class CurrencyConverterController {
     } catch (IOException | JSONException e) {
       e.printStackTrace();
     }
+  }
+  
+  public void convertCurrency() {
+    double amount = currencyConverterView.getAmount();
+    Currency fromCurrency = currencyConverterView.getFromCurrency();
+    Currency toCurrency = currencyConverterView.getToCurrency();
+    
+    double result = currencyConverter.convert(amount, fromCurrency, toCurrency);
+    currencyConverterView.setResult(result);
+    
+  }
+  
+  public static Currency[] getCurrencies() {
+    return Currency.values();
   }
 }
