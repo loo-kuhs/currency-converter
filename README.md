@@ -6,10 +6,10 @@ This project is for the Oracle One Next Education challenge No. 2.
 
 ### Project status
 
-> Ongoing
+> ![Project status](https://img.shields.io/badge/status-finished-success?style=for-the-badge)
+> ![GitHub last commit](https://img.shields.io/github/last-commit/loo-kuhs/currency-converter?style=for-the-badge)
 >
 > ![GitHub top language](https://img.shields.io/github/languages/top/loo-kuhs/currency-converter?style=for-the-badge)
-> ![GitHub last commit](https://img.shields.io/github/last-commit/loo-kuhs/currency-converter?style=for-the-badge)
 > ![GitHub repo size](https://img.shields.io/github/repo-size/loo-kuhs/currency-converter?style=for-the-badge)
 > ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/loo-kuhs/currency-converter?style=for-the-badge)
 
