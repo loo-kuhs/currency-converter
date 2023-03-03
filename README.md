@@ -44,5 +44,5 @@ Remembering that it must also be possible to convert inversely, i.e.:
 ## Alura's challenge badge
 
 <div align="center">
-  <img src="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211831Prancheta_8.png?utm_campaign=alura_latam_-_challenge_email_projeto_5_esp&utm_medium=email&utm_source=RD+Station" alt="Alura's challenge badge" width="150px">
+  <img src="./assets/java-badge.png" alt="Alura's challenge badge" style="width: 20%">
 </div>
