@@ -1,7 +1,7 @@
 package com.lookuhs.controller;
 
 import com.lookuhs.model.CurrencyConverter;
-import netscape.javascript.JSObject;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -13,6 +13,10 @@ import java.net.URL;
 public class CurrencyConverterController {
   
   private CurrencyConverter currencyConverter;
+  
+  public CurrencyConverterController() {
+    currencyConverter = new CurrencyConverter();
+  }
   
   public void updateExchangeRates() {
     try {
@@ -30,8 +34,14 @@ public class CurrencyConverterController {
         JSONObject jsonResponse = new JSONObject(response);
         JSONObject rates = jsonResponse.getJSONObject("conversion_rates");
         
+        currencyConverter.setExchangeRates("USD", rates.getDouble("USD"));
+        currencyConverter.setExchangeRates("EUR", rates.getDouble("EUR"));
+        currencyConverter.setExchangeRates("GBP", rates.getDouble("GBP"));
+        currencyConverter.setExchangeRates("JPY", rates.getDouble("JPY"));
+        currencyConverter.setExchangeRates("KRW", rates.getDouble("KRW"));
+        
       }
-    } catch (IOException e) {
+    } catch (IOException | JSONException e) {
       e.printStackTrace();
     }
   }
