@@ -13,7 +13,6 @@ This project is for the Oracle One Next Education challenge No. 2.
 > ![GitHub repo size](https://img.shields.io/github/repo-size/loo-kuhs/currency-converter?style=for-the-badge)
 > ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/loo-kuhs/currency-converter?style=for-the-badge)
 
-
 ## Description
 
 In this opportunity, the developers were asked to create a
@@ -22,7 +21,7 @@ features requested by our client are the following:
 
 ### Required features
 
-- [ ] The currency converter must:
+- [x] The currency converter must:
 
 ```text
 - Convert from your country's currency to Dollar
@@ -41,3 +40,9 @@ Remembering that it must also be possible to convert inversely, i.e.:
 - Convert from Japanese Yen to your country's currency
 - Convert from South Korean Won to your country's currency
 ```
+
+## Alura's challenge badge
+
+<div align="center">
+  <img src="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211831Prancheta_8.png?utm_campaign=alura_latam_-_challenge_email_projeto_5_esp&utm_medium=email&utm_source=RD+Station" alt="Alura's challenge badge" width="150px">
+</div>
