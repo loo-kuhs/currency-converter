@@ -1,4 +1,5 @@
 package com.lookuhs.model;
 
-public class Currency {
+public enum Currency {
+  USD, EUR, GBP, JPY, KRW
 }
